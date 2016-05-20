@@ -1,0 +1,9 @@
+CREATE SCHEMA PUBLIC AUTHORIZATION DBA
+CREATE MEMORY TABLE ANNONCE(IDENTIFIANT BIGINT NOT NULL PRIMARY KEY,titre VARCHAR(140),description VARCHAR(255))
+CREATE USER SA PASSWORD ""
+GRANT DBA TO SA
+SET WRITE_DELAY 10
+SET SCHEMA PUBLIC
+INSERT INTO ANNONCE VALUES('ANNONCE 1', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia soluta nam beatae commodi eligendi necessitatibus, obcaecati distinctio nemo odio inventore at expedita optio repudiandae sit, quibusdam molestiae quos ducimus qui?')
+INSERT INTO CONTACTS VALUES('ANNONCE 2','Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti eum, aliquam facere debitis quaerat vero, fuga obcaecati deserunt libero laborum ducimus praesentium, consectetur pariatur commodi suscipit, veritatis odit nemo porro!')
+INSERT INTO CONTACTS VALUES('ANNONCE 3', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quod numquam tempora voluptatibus et harum accusamus, autem ea ratione doloremque, quibusdam, error expedita delectus quis dignissimos recusandae amet magni possimus!')
